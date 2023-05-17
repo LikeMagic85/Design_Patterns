@@ -5,4 +5,6 @@
     <string name="double_label_text">Double?</string>
     <string name="milk_label_text">Milk?</string>
     <string name="make_coffee_btn_text">Make coffee</string>
+    <string name="singleton_btn_text">Singleton</string>
+    <string name="singleton_title_text">Sun is singleton)</string>
 </resources>

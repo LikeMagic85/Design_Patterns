@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         binding.builderBtn.setOnClickListener {
             navigateTo(BuilderFragment.newInstance())
         }
+        binding.singletonBtn.setOnClickListener {
+            navigateTo(SingletonFragment.newInstance())
+        }
     }
 
 
