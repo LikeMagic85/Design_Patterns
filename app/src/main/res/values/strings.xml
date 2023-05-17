@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Design Patterns</string>
+    <string name="builder_btn_text">Builder</string>
+    <string name="question_coffee_text">What coffee do you want?</string>
+    <string name="double_label_text">Double?</string>
+    <string name="milk_label_text">Milk?</string>
+    <string name="make_coffee_btn_text">Make coffee</string>
 </resources>
