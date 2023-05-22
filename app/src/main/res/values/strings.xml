@@ -9,4 +9,7 @@
     <string name="singleton_title_text">Sun is singleton)</string>
     <string name="factory_method_btn_text">Factory method</string>
     <string name="factory_method_title_text">Factory method</string>
+    <string name="facade_btn_text">Facade</string>
+    <string name="facade_title_text">Facade</string>
+    <string name="get_user_btn_text">Get User</string>
 </resources>

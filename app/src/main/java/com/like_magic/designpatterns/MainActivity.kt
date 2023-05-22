@@ -22,6 +22,9 @@ class MainActivity : AppCompatActivity() {
         binding.factoryMethodBtn.setOnClickListener {
             navigateTo(FactoryMethodFragment.newInstance())
         }
+        binding.facadeBtn.setOnClickListener {
+            navigateTo(FacadeFragment.newInstance())
+        }
     }
 
 
