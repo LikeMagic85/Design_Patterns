@@ -47,6 +47,15 @@
             app:layout_constraintTop_toBottomOf="@id/factory_method_btn"
             android:text="@string/facade_btn_text"/>
 
+        <Button
+            android:id="@+id/observer_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/facade_btn"
+            android:text="@string/weather_observer_btn_text"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

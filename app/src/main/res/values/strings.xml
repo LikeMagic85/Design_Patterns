@@ -12,4 +12,7 @@
     <string name="facade_btn_text">Facade</string>
     <string name="facade_title_text">Facade</string>
     <string name="get_user_btn_text">Get User</string>
+    <string name="weather_observer_btn_text">Weather observer</string>
+    <string name="weather_title_text">Weather</string>
+    <string name="to_next_screen_btn_text">To next screen</string>
 </resources>

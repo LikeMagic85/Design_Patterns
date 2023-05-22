@@ -25,13 +25,16 @@ class MainActivity : AppCompatActivity() {
         binding.facadeBtn.setOnClickListener {
             navigateTo(FacadeFragment.newInstance())
         }
+        binding.observerBtn.setOnClickListener {
+            navigateTo(WeatherFirstFragment.newInstance())
+        }
     }
 
 
     private fun navigateTo(fragment: Fragment){
         supportFragmentManager.beginTransaction()
             .addToBackStack(null)
-            .replace(R.id.main_container, fragment)
+            .add(R.id.main_container, fragment)
             .commit()
     }
 }
