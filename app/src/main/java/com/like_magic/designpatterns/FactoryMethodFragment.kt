@@ -5,12 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.like_magic.designpatterns.databinding.FragmentSingletonBinding
+import com.like_magic.designpatterns.databinding.FragmentFactoryMethodBinding
 
-class SingletonFragment : Fragment() {
+class FactoryMethodFragment : Fragment() {
 
-    private var _binding: FragmentSingletonBinding? = null
-    private val binding: FragmentSingletonBinding
+    private var _binding: FragmentFactoryMethodBinding? = null
+    private val binding: FragmentFactoryMethodBinding
         get() = _binding ?: throw RuntimeException("FragmentSingletonBinding is null")
 
 
@@ -18,16 +18,19 @@ class SingletonFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentSingletonBinding.inflate(inflater, container, false)
+        _binding = FragmentFactoryMethodBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val sun1 = Sun.newInstance()
-        val sun2 = Sun.newInstance()
-        sun1.addTemp(100)
-        binding.result.text = sun2.temp.toString()
+        val deliveryMethodFactory = DeliveryMethodFactory("Test", 1000, 50)
+        val shipDelivery = deliveryMethodFactory.createDeliveryMethod("USA")
+        if(shipDelivery is ShipDelivery){
+            shipDelivery.type = "By river"
+        }
+        shipDelivery?.deliver()
+
     }
 
     override fun onDestroyView() {
@@ -37,6 +40,6 @@ class SingletonFragment : Fragment() {
 
     companion object {
         fun newInstance() =
-            SingletonFragment()
+            FactoryMethodFragment()
     }
 }

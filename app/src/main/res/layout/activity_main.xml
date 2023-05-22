@@ -29,6 +29,15 @@
             app:layout_constraintTop_toBottomOf="@id/builder_btn"
             android:text="@string/singleton_btn_text"/>
 
+        <Button
+            android:id="@+id/factory_method_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/singleton_btn"
+            android:text="@string/factory_method_btn_text"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
